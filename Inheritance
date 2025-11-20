@@ -1,0 +1,20 @@
+class Person {
+    String name;
+    public void setName(String n) { name = n; }
+    public String getName() { return name; }
+}
+
+class Student extends Person {
+    int id;
+    public void setId(int i) { id = i; }
+    public int getId() { return id; }
+}
+
+public class Activity5 {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.setName("Alice");
+        s.setId(101);
+        System.out.println("Name: " + s.getName() + ", ID: " + s.getId());
+    }
+}
